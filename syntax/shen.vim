@@ -4,6 +4,7 @@
 " URL:          http://github.com/nimaai/vim-shen.git
 " Description:  Syntax definition for Shen language (www.shenlanguage.org)
 
+" system functions
 syntax keyword shenSyntax absvector
 syntax keyword shenSyntax absvector?
 syntax keyword shenSyntax address->
@@ -157,9 +158,14 @@ syntax keyword shenSyntax ==
 syntax keyword shenSyntax >=
 syntax keyword shenSyntax <=
 
+" Shen-YACC
+syntax keyword shenYACCSyntax defcc
+syntax keyword shenYACCSyntax compile
+
 command -nargs=+ HiLink hi def link <args>
 
-HiLink shenSyntax Statement
+HiLink shenSyntax Function
+HiLink shenYACCSyntax Function
 
 delcommand HiLink
 
