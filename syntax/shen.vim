@@ -4,6 +4,10 @@
 " URL:          http://github.com/nimaai/vim-shen.git
 " Description:  Syntax definition for Shen language (www.shenlanguage.org)
 
+setlocal lisp
+
+setlocal iskeyword+=@,$,+,-,*,/,.,>,<,=
+
 " system functions
 syntax keyword shenSyntax absvector
 syntax keyword shenFunc absvector?
