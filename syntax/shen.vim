@@ -172,9 +172,11 @@ syntax match shenYACCNonTerminal "<end>"
 syntax match shenYACCNonTerminal "<\k\+>"
 
 " Shen special characters
+syntax match shenSpecial "|"
 syntax keyword shenSpecial :=
 syntax keyword shenSpecial ;
 syntax keyword shenSpecial ->
+syntax keyword shenSpecial where
 
 command -nargs=+ HiLink hi def link <args>
 
