@@ -6,7 +6,7 @@
 
 setlocal lisp
 
-setlocal iskeyword+=@,$,+,-,*,/,.,>,<,=,:,;
+setlocal iskeyword+=@,$,+,-,*,/,.,>,<,=,:,;,!
 
 " system functions
 syntax keyword shenSyntax absvector
@@ -166,6 +166,10 @@ syntax keyword shenFunc <=
 " Shen-YACC
 syntax keyword shenYACCSyntax defcc
 syntax keyword shenYACCSyntax compile
+syntax match shenYACCNonTerminal "<!>"
+syntax match shenYACCNonTerminal "<e>"
+syntax match shenYACCNonTerminal "<end>"
+syntax match shenYACCNonTerminal "<\k\+>"
 
 " Shen special characters
 syntax keyword shenSpecial :=
@@ -175,9 +179,11 @@ syntax keyword shenSpecial ->
 command -nargs=+ HiLink hi def link <args>
 
 HiLink shenSyntax Statement
-HiLink shenYACCSyntax Statement
 HiLink shenFunc Function
 HiLink shenSpecial Special
+
+HiLink shenYACCSyntax Statement
+HiLink shenYACCNonTerminal Structure
 
 delcommand HiLink
 
