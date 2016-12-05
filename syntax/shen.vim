@@ -6,7 +6,7 @@
 
 setlocal lisp
 
-setlocal iskeyword+=@,$,+,-,*,/,.,>,<,=,:,;,!
+setlocal iskeyword+=@,$,+,-,*,/,.,>,<,=,:,!
 
 " system functions
 syntax keyword shenSyntax absvector
@@ -178,19 +178,30 @@ syntax match shenSpecial ";"
 syntax keyword shenSpecial ->
 syntax keyword shenSpecial where
 
+" square brackets
+syntax match shenSquareBracket "]"
+syntax match shenSquareBracket "\["
+
+" numbers
 syntax match shenNumber "\<\d\+\(\.\=\d\+\)\=\>"
+
+" numbers
+syntax match shenVariable "\<\D\l*\>"
 
 command -nargs=+ HiLink hi def link <args>
 
 HiLink shenSyntax Statement
-HiLink shenFunc Function
+HiLink shenVariable Identifier
 HiLink shenSpecial Special
 
 HiLink shenYACCSyntax Statement
-HiLink shenYACCNonTerminal Structure
+HiLink shenYACCNonTerminal Constant
 
-HiLink shenNumber Number
+" HiLink shenSquareBracket Structure
 
 delcommand HiLink
+
+highlight Special cterm=bold
+highlight Statement cterm=bold
 
 let b:current_syntax = "shen"
