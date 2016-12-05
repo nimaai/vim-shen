@@ -173,6 +173,7 @@ syntax match shenYACCNonTerminal "<\k\+>"
 
 " Shen special characters
 syntax match shenSpecial "|"
+syntax keyword shenSpecial <-
 syntax keyword shenSpecial :=
 syntax match shenSpecial ";"
 syntax keyword shenSpecial ->
@@ -193,6 +194,8 @@ command -nargs=+ HiLink hi def link <args>
 HiLink shenSyntax Statement
 HiLink shenVariable Identifier
 HiLink shenSpecial Special
+" HiLink shenSpecialPipe SpecialChar
+" HiLink shenSpecialBacktrack SpecialChar
 
 HiLink shenYACCSyntax Statement
 HiLink shenYACCNonTerminal Constant
@@ -201,6 +204,7 @@ HiLink shenYACCNonTerminal Constant
 
 delcommand HiLink
 
+" highlight SpecialChar cterm=bold ctermfg=1
 highlight Special cterm=bold
 highlight Statement cterm=bold
 
