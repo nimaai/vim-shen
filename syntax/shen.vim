@@ -66,6 +66,7 @@ syntax keyword shenFunc it
 syntax keyword shenSyntax lambda
 syntax keyword shenFunc language
 syntax keyword shenFunc length
+syntax keyword shenSyntax let
 syntax keyword shenFunc limit
 syntax keyword shenSyntax lineread
 syntax keyword shenFunc load
