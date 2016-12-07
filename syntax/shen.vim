@@ -205,7 +205,7 @@ HiLink shenYACCNonTerminal Constant
 delcommand HiLink
 
 " highlight SpecialChar cterm=bold ctermfg=1
-highlight Special cterm=bold
-highlight Statement cterm=bold
+" highlight Special cterm=bold term=bold gui=bold
+" highlight Statement cterm=bold term=bold gui=bold
 
 let b:current_syntax = "shen"
