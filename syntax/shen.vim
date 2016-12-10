@@ -19,6 +19,7 @@ syntax keyword shenSyntax append
 syntax keyword shenSyntax arity
 syntax keyword shenSyntax boolean?
 syntax keyword shenSyntax bound?
+syntax keyword shenSyntax cases
 syntax keyword shenSyntax cd
 syntax keyword shenSyntax close
 syntax keyword shenSyntax cn
