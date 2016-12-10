@@ -187,7 +187,7 @@ syntax match shenSquareBracket "\["
 syntax match shenNumber "\<\d\+\(\.\=\d\+\)\=\>"
 
 " numbers
-syntax match shenVariable "\<\u\l*\>"
+syntax match shenVariable "\<\u\k*\>"
 
 command -nargs=+ HiLink hi def link <args>
 
