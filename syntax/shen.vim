@@ -5,6 +5,8 @@
 " Description:  Syntax definition for Shen language (www.shenlanguage.org)
 
 setlocal lisp
+setlocal lispwords-=let
+setlocal lispwords-=if
 
 setlocal iskeyword+=@,$,+,-,*,/,.,>,<,=,:,!
 
