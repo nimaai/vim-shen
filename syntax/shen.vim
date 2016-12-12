@@ -8,7 +8,7 @@ setlocal lisp
 setlocal lispwords-=let
 setlocal lispwords-=if
 
-setlocal iskeyword+=@,$,+,-,*,/,.,>,<,=,:,!
+setlocal iskeyword+=@,$,+,-,*,/,.,>,<,=,:,!,'
 
 " system functions
 syntax keyword shenSyntax absvector
