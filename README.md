@@ -37,6 +37,11 @@ Lisp typical indentation for `let` and `if` has been disabled. Thus, they indent
     true
     false)
 ```
+
+Known problems
+--------------
+Tuple, string and vector constructors `@p`, `@s`, `@v` do not highlight as they should. I suspect that `@` character has a special meaning in regards to the vimscript syntax...
+
 Recommendations
 ---------------
 * [Paredit] (https://github.com/kovisoft/paredit) has support for Shen.
