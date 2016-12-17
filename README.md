@@ -26,7 +26,7 @@ The motivation for this choice is rather personal with regards to being able to 
 
 Indentation
 -----------
-Lisp typical indentation for `let` and `if` has been disabled. Thus, they indent like any other function call:
+Lisp typical indentation for `let`, `if` and `do` has been disabled. Thus, they indent like any other function call:
 ```
 (let Var1 1
      Var2 2
