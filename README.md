@@ -15,14 +15,14 @@ Syntax highlighting
 -------------------
 All the keywords defined in [Shen's system functions] (http://www.shenlanguage.org/learn-shen/system.pdf#system-functions) are highlighted, as well as `if`, `let`, `cases` and Shen-YACC's `defcc` and `compile`.
 
-Apart from that, syntax highlighting primarily focusses on tokens and grammar special to Shen. Number, Strings, etc. are not highlighted, but:
+Apart from that, syntax highlighting primarily focusses on tokens and grammar special to Shen. Number, Strings, etc. are currently not highlighted, but the following are:
 * function definition: `->`, `<-`, `where`
 * all function and local variables which begin with uppercase character
 * list construction operator: `|`
 * Shen-YACC: `:=`, `;`, `<!>`, `<e>`, `<end>` and all user defined `<.*>`
 * more to come, like data type definitions, etc.
 
-are.
+The motivation for this choice is rather personal with regards to being able to learn Shen faster and write it in a convenient manner. Syntax highlighting will most probably change in future to lean on the [grammar definition of Shen] (http://shenlanguage.org/learn-shen/index.html#12%20The%20Syntax%20of%20Shen) in a stricter manner.
 
 Indentation
 -----------
