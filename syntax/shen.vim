@@ -199,6 +199,7 @@ command -nargs=+ HiLink hi def link <args>
 HiLink shenSyntax Statement
 HiLink shenVariable Identifier
 HiLink shenSpecial Special
+HiLink shenNumber Number
 " HiLink shenSpecialPipe SpecialChar
 " HiLink shenSpecialBacktrack SpecialChar
 
