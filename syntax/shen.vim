@@ -110,6 +110,7 @@ syntax keyword shenSyntax read-from-string
 syntax keyword shenSyntax remove
 syntax keyword shenSyntax require
 syntax keyword shenSyntax reverse
+syntax keyword shenSyntax set
 syntax keyword shenSyntax simple-error
 syntax keyword shenSyntax snd
 syntax keyword shenSyntax specialise
