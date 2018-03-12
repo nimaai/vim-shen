@@ -184,15 +184,11 @@ syntax match shenSpecial ";"
 syntax keyword shenSpecial ->
 syntax keyword shenSpecial where
 
-" square brackets
 syntax match shenSquareBracket "]"
 syntax match shenSquareBracket "\["
-
-" numbers
 syntax match shenNumber "\<\d\+\(\.\=\d\+\)\=\>"
-
-" numbers
 syntax match shenVariable "\<\u\k*\>"
+syntax region shenComment start="\\\*" end="\*\\"
 
 command -nargs=+ HiLink hi def link <args>
 
@@ -200,6 +196,7 @@ HiLink shenSyntax Statement
 HiLink shenVariable Identifier
 HiLink shenSpecial Special
 HiLink shenNumber Number
+HiLink shenComment Comment
 " HiLink shenSpecialPipe SpecialChar
 " HiLink shenSpecialBacktrack SpecialChar
 
