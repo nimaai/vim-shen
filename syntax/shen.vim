@@ -30,9 +30,6 @@ syntax keyword shenSyntax concat
 syntax keyword shenSyntax cons
 syntax keyword shenSyntax cons?
 syntax keyword shenSyntax declare
-syntax keyword shenSyntax define
-syntax keyword shenSyntax defmacro
-syntax keyword shenSyntax defprolog
 syntax keyword shenSyntax destroy
 syntax keyword shenSyntax difference
 syntax keyword shenSyntax do
@@ -168,9 +165,17 @@ syntax keyword shenSyntax ==
 syntax keyword shenSyntax >=
 syntax keyword shenSyntax <=
 
+syntax keyword shenDef define
+syntax keyword shenDef defmacro
+syntax keyword shenDef defprolog
+syntax keyword shenDef defcc
+
+syntax keyword shenBoolean true
+syntax keyword shenBoolean false
+
 " Shen-YACC
-syntax keyword shenYACCSyntax defcc
 syntax keyword shenYACCSyntax compile
+
 syntax match shenYACCNonTerminal "<!>"
 syntax match shenYACCNonTerminal "<e>"
 syntax match shenYACCNonTerminal "<end>"
@@ -194,11 +199,13 @@ syntax region shenString start=,", end=,",
 command -nargs=+ HiLink hi def link <args>
 
 HiLink shenSyntax Statement
+HiLink shenDef Define
 HiLink shenVariable Identifier
 HiLink shenSpecial Special
 HiLink shenNumber Number
 HiLink shenComment Comment
 HiLink shenString String
+HiLink shenBoolean Boolean
 " HiLink shenSpecialPipe SpecialChar
 " HiLink shenSpecialBacktrack SpecialChar
 
