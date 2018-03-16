@@ -188,6 +188,7 @@ syntax keyword shenSpecial :=
 syntax match shenSpecial ";"
 syntax keyword shenSpecial ->
 syntax keyword shenSpecial where
+syntax region shenSpecial start="*" end="*"
 
 syntax match shenSquareBracket "]"
 syntax match shenSquareBracket "\["
