@@ -194,6 +194,7 @@ syntax match shenSquareBracket "]"
 syntax match shenSquareBracket "\["
 syntax match shenNumber "\<\d\+\(\.\=\d\+\)\=\>"
 syntax match shenVariable "\<\u\k*\>"
+syntax match shenComment "\\\\.*$"
 syntax region shenComment start="\\\*" end="\*\\"
 syntax region shenString start=,", end=,",
 
