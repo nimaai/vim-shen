@@ -8,6 +8,7 @@ setlocal lisp
 setlocal lispwords-=let
 setlocal lispwords-=if
 setlocal lispwords-=do
+setlocal lispwords+=defprolog
 
 setlocal iskeyword+=@,$,+,-,*,/,.,>,<,=,:,!,'
 
