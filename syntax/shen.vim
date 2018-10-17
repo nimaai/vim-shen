@@ -55,6 +55,7 @@ syntax keyword shenSyntax hd
 syntax keyword shenSyntax hdstr
 syntax keyword shenSyntax hdv
 syntax keyword shenSyntax if
+syntax keyword shenSyntax is
 syntax keyword shenSyntax implementation
 syntax keyword shenSyntax include
 syntax keyword shenSyntax include-all-but
@@ -147,6 +148,7 @@ syntax keyword shenSyntax vector
 syntax keyword shenSyntax vector?
 syntax keyword shenSyntax vector->
 syntax keyword shenSyntax <-vector
+syntax keyword shenSyntax when
 syntax keyword shenSyntax write-byte
 syntax keyword shenSyntax write-to-file
 syntax keyword shenSyntax y-or-n?
