@@ -187,6 +187,7 @@ syntax match shenYACCNonTerminal "<\k\+>"
 " Shen special characters
 syntax match shenSpecial "|"
 syntax keyword shenSpecial <-
+syntax keyword shenSpecial <--
 syntax keyword shenSpecial :=
 syntax match shenSpecial ";"
 syntax keyword shenSpecial ->
