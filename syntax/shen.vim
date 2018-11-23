@@ -201,6 +201,7 @@ syntax match shenVariable "\<\u\k*\>"
 syntax match shenComment "\\\\.*$"
 syntax region shenComment start="\\\*" end="\*\\"
 syntax region shenString start=,", end=,",
+syntax region shenFunctionType start="{" end="}"
 
 command -nargs=+ HiLink hi def link <args>
 
@@ -212,6 +213,7 @@ HiLink shenNumber Number
 HiLink shenComment Comment
 HiLink shenString String
 HiLink shenBoolean Boolean
+HiLink shenFunctionType Typedef
 " HiLink shenSpecialPipe SpecialChar
 " HiLink shenSpecialBacktrack SpecialChar
 
