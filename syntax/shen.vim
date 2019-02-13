@@ -185,7 +185,6 @@ syntax match shenYACCNonTerminal "<end>"
 syntax match shenYACCNonTerminal "<\k\+>"
 
 " Shen special characters
-syntax match shenSpecial "|"
 syntax keyword shenSpecial <-
 syntax keyword shenSpecial <--
 syntax keyword shenSpecial :=
@@ -194,8 +193,9 @@ syntax keyword shenSpecial ->
 syntax keyword shenSpecial where
 syntax region shenSpecial start="*" end="*"
 
-syntax match shenSquareBracket "]"
-syntax match shenSquareBracket "\["
+syntax match shenList "]"
+syntax match shenList "\["
+syntax match shenList "|"
 syntax match shenNumber "\<\d\+\(\.\=\d\+\)\=\>"
 syntax match shenVariable "\<\u\k*\>"
 syntax match shenComment "\\\\.*$"
@@ -214,13 +214,9 @@ HiLink shenComment Comment
 HiLink shenString String
 HiLink shenBoolean Boolean
 HiLink shenFunctionType Typedef
-" HiLink shenSpecialPipe SpecialChar
-" HiLink shenSpecialBacktrack SpecialChar
-
 HiLink shenYACCSyntax Statement
 HiLink shenYACCNonTerminal Constant
-
-" HiLink shenSquareBracket Structure
+HiLink shenList Structure
 
 delcommand HiLink
 
