@@ -199,6 +199,7 @@ syntax match shenList "|"
 syntax match shenNumber "\<\d\+\(\.\=\d\+\)\=\>"
 syntax match shenVariable "\<\u\k*\>"
 syntax match shenComment "\\\\.*$"
+syntax match shenFunctionName "(\<\k*\>\s\{-}"hs=s+1 contains=shenDef,shenSyntax
 syntax region shenComment start="\\\*" end="\*\\"
 syntax region shenString start=,", end=,",
 syntax region shenFunctionType start="{" end="}"
@@ -217,11 +218,13 @@ HiLink shenFunctionType Typedef
 HiLink shenYACCSyntax Statement
 HiLink shenYACCNonTerminal Constant
 HiLink shenList Structure
+HiLink shenFunctionName Ignore
 
 delcommand HiLink
 
 " highlight SpecialChar cterm=bold ctermfg=1
 " highlight Special cterm=bold term=bold gui=bold
 " highlight Statement cterm=bold term=bold gui=bold
+highlight Ignore cterm=bold term=bold gui=bold
 
 let b:current_syntax = "shen"
